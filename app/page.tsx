@@ -3,7 +3,7 @@ import { Flex, Box, Heading, SimpleGrid, Text, Container } from "@chakra-ui/reac
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import { Button, ButtonGroup } from '@chakra-ui/react'
-
+import { Jobmodal } from "./JobModal"
 import {
   Modal,
   ModalOverlay,
@@ -39,7 +39,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button> View here</Button>
+                <Jobmodal/>
               </CardFooter>
             </Card>
             <Card>
@@ -50,7 +50,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button>View here</Button>
+              <Jobmodal/>
               </CardFooter>
             </Card>
             <Card>
@@ -61,7 +61,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button>View here</Button>
+              <Jobmodal/>
               </CardFooter>
             </Card>
           </SimpleGrid></p>
@@ -76,7 +76,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button> View here</Button>
+              <Jobmodal/>
               </CardFooter>
             </Card>
             <Card>
@@ -87,7 +87,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button>View here</Button>
+              <Jobmodal/>
               </CardFooter>
             </Card>
           </SimpleGrid></p>
@@ -102,7 +102,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button> View here</Button>
+              <Jobmodal/>
               </CardFooter>
             </Card>
             <Card>
@@ -113,7 +113,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button>View here</Button>
+              <Jobmodal/>
               </CardFooter>
             </Card>
             <Card>
@@ -124,7 +124,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button>View here</Button>
+                <Jobmodal/>
               </CardFooter>
             </Card>
           </SimpleGrid></p>
@@ -139,7 +139,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button> View here</Button>
+              <Jobmodal/>
               </CardFooter>
             </Card>
             <Card>
@@ -150,7 +150,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button>View here</Button>
+                <Jobmodal/>
               </CardFooter>
             </Card>
             <Card>
@@ -161,7 +161,7 @@ const IndexPage = () => (
                 <Text>View a summary of all your customers over the last month.</Text>
               </CardBody>
               <CardFooter>
-                <Button>View here</Button>
+                <Jobmodal/>
               </CardFooter>
             </Card>
             <Card>
@@ -195,7 +195,7 @@ function BasicUsage() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
-      <Button onClick={onOpen}>Zobacz więcej</Button>
+      <Button colorScheme='blue' onClick={onOpen}>Zobacz więcej</Button>
 
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
