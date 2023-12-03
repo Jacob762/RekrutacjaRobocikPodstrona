@@ -1,7 +1,7 @@
 # Wstęp
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
-**Przede wszystkim** - projekt jest bardzo okrojony, bardzo koncepcyjny i na razie ma służyć jako podstawa pod zaprojektowanie czegoś ładniejszego i sensowniejszego. Frontendowiec ze mnie marny, właściwie to nawet jakikolwiek endowiec. W każdym razie, popatrzcie, poczytajcie, jak macie ochotę to nawet uruchomcie to sami na swoim sprzęcie (poradnik na samym dole, wymaga next-js w wersji 13.5 i absolutnie nie nowszej, tłumaczenie w poradniku). Projekt korzysta z biblioteki ![_chakra-ui_]{https://chakra-ui.com/docs/components}, która bardzo ułatwia budowanie stron od strony wizualnej, ale jednocześnie jest delikatnie okrojona w pewnych możliwościach, co też przedstawię poniżej.  
+**Przede wszystkim** - projekt jest bardzo okrojony, bardzo koncepcyjny i na razie ma służyć jako podstawa pod zaprojektowanie czegoś ładniejszego i sensowniejszego. Frontendowiec ze mnie marny, właściwie to nawet jakikolwiek endowiec. W każdym razie, popatrzcie, poczytajcie, jak macie ochotę to nawet uruchomcie to sami na swoim sprzęcie (poradnik na samym dole, wymaga next-js w wersji 13.5 i absolutnie nie nowszej, tłumaczenie w poradniku). Projekt korzysta z biblioteki [_chakra-ui_](https://chakra-ui.com/docs/components), która bardzo ułatwia budowanie stron od strony wizualnej, ale jednocześnie jest delikatnie okrojona w pewnych możliwościach, co też przedstawię poniżej.  
 
 
 ### Poruszanie się po stronie
@@ -13,7 +13,7 @@
     - Wykorzystany komponent Flex (albo jakikolwiek inny, nawet własnoręcznie zbudowany, mało istotne) musi tam być zrobiony jako responsywny, więc będzie się dopasowywał do urządzenia. Tym samym, grafika musi być albo zaprojektowana tak, aby wyglądała wszędzie tak samo, albo tak, żeby wyglądała wszędzie **ładnie**. Niekoniecznie jedno musi być połączone z drugim, trzeba mieć na uwadze.
     - Na ten moment, jest ustawiona z góry narzucona przeze mnie wysokość 40vh, która po prostu dobrze wyglądała na urządzeniu, gdzie to robiłem. Trzeba by potestować, czy aby na pewno wszędzie będzie tak samo dobrze się prezentować. Z dawnych lat kojarze, że jednostka vh się jakoś dostosowywuje do strony, ale specjalistą nie jestem, więc nie wiem. Na 13" (i nieco szerszej rozdzielczości) wygląda dobrze, na 19" (kwadrat) już gorzej, więc się słabo przystosowuje. 
 2. _Zakładki z nazwami działów_ - uważam, że przy naszej ilości stanowisk, na jakie zazwyczaj rekrutujemy, bez sensu jest bawić się w filtrowania czy sortowania przy wrzuconych wszystkich opisach w jedno miejsce. Podział na działy i nawigowanie po zakładkach będzie znacznie czytelniejsze i przede wszystkim **łatwiejsze** do stworzenia. Obserwując to na różnych sprzętach, wydaje mi się, że zakładki powinny być przede wszystkim większe i może jakieś różnokolorowe. 
-3. _Karty ze stanowiskami_ - mnie się bardzo podoba taki koncept, wzięty rodem ze strony ![rekrutacji Diehla]{https://www.diehl.com/career/en/jobs-application/job-offers/}, gdzie jedyne czego w kartach brakuje to ładnego paska, który zapełnia się na górze karty, generując przyjmną animację. Zamysł jest prosty, każda karta zawiera: tytuł stanowiska, bardzo bardzo bardzo krótki opis, który ma przykuć uwagę i przycisk _zobacz więcej_, który otwiera tzw. modala, który jest punktem 4 w tej rozpisce. Początkowo myślałem o dodaniu do karty zdjęcia, ale wydaje mi się to trochę za dużo, proste rozwiązanie jest przyjemniejsze dla oka.
+3. _Karty ze stanowiskami_ - mnie się bardzo podoba taki koncept, wzięty rodem ze strony [rekrutacji Diehla](https://www.diehl.com/career/en/jobs-application/job-offers/), gdzie jedyne czego w kartach brakuje to ładnego paska, który zapełnia się na górze karty, generując przyjmną animację. Zamysł jest prosty, każda karta zawiera: tytuł stanowiska, bardzo bardzo bardzo krótki opis, który ma przykuć uwagę i przycisk _zobacz więcej_, który otwiera tzw. modala, który jest punktem 4 w tej rozpisce. Początkowo myślałem o dodaniu do karty zdjęcia, ale wydaje mi się to trochę za dużo, proste rozwiązanie jest przyjemniejsze dla oka.
 
 ![Karta](ImageAssetsReadme/card.jpg)
 
@@ -32,7 +32,7 @@
 
 **Nie jest to najprostsze**, głównie dlatego, że chakra nie działa na next-js w wersji 14 i nowszych (nie wiem czemu), więc trzeba zmusić create-next-app do zainstalowania starszej wersji. Do przeglądania kodu zalecam **Visual Studio Code**, które dobrze radzi sobie z typescriptem i next-js. Należy też zainstalować node-js oraz npm. 
 1. Odpalamy terminal, wpisujemy komendę _npx create-next-app@13_, jeśli coś wam nie działa to piszcie do mnie, albo wpisujcie błąd w neta. 
-2. Wszystko odpalamy domyślnie, tak jak w tym [poradniku]{https://www.youtube.com/watch?v=ZVnjOPwW4ZA} w **8:50**.
+2. Wszystko odpalamy domyślnie, tak jak w tym [poradniku](https://www.youtube.com/watch?v=ZVnjOPwW4ZA) w **8:50**.
 3. Jak wszystko się zainstaluje, instalujemy chakrę komendą _npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion_.
 4. Upewnijcie się, że next-js jest w wersji 13.5, albo niższej. Jeśli nie jest, wpisujecie komendę _npm i next@13_.
 5. Odpalcie kontrolę wersji i sklonujcie przez gita, albo przerzucacie pliki z folderu **app** do siebie. Reszte plików usuwacie, najlepiej zróbcie to w pierwszej kolejności, żeby nie było żadnych konfliktów. 
