@@ -16,6 +16,7 @@
 3. _Karty ze stanowiskami_ - mnie się bardzo podoba taki koncept, wzięty rodem ze strony [rekrutacji Diehla]{https://www.diehl.com/career/en/jobs-application/job-offers/}, gdzie jedyne czego w kartach brakuje to ładnego paska, który zapełnia się na górze karty, generując przyjmną animację. Zamysł jest prosty, każda karta zawiera: tytuł stanowiska, bardzo bardzo bardzo krótki opis, który ma przykuć uwagę i przycisk _zobacz więcej_, który otwiera tzw. modala, który jest punktem 4 w tej rozpisce. Początkowo myślałem o dodaniu do karty zdjęcia, ale wydaje mi się to trochę za dużo, proste rozwiązanie jest przyjemniejsze dla oka.
 
 ![Karta](ImageAssetsReadme/card.jpg)
+
 4. _Modal_ - tworzenie podstron wydaje mi się niepotrzebne dla tak małej liczby stanowisk, jaką mamy, także postanowiłem zastąpić to wyskakującym okienkiem. Jest to rozwinięcie karty ze stanowiskiem. Mój pomysł jest taki, aby zawierało:
     - Tytuł stanowiska
     - Jakieś ładne hasło wraz z opisem co tam robimy
@@ -24,6 +25,7 @@
     - zdjęcie, duże, po prawej stronie
     - dwa przyciski: aplikuj (oczywiste - formularz) i wróć (również oczywiste)
 ![Modal](ImageAssetsReadme/modal.jpg)
+
 5. _Stopka_ - wiadomo o co chodzi, myślę, że można zrobić albo taką małą, skromną, albo dać taką, gdzie będzie logo i odnośniki i logo polibudy i takie tam.
 
 ### Poradnik odpalenia strony
